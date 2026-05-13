@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Calculator</title>
+    <meta name="description" content="A beautiful and dynamic age calculator.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background-orbs">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+    </div>
+    
+    <main class="calculator-card">
+        <header>
+            <h1>Age Calculator</h1>
+            <p>Discover your exact age in years, months, and days.</p>
+        </header>
+
+        <section class="input-section">
+            <div class="input-group">
+                <label for="dob">Date of Birth</label>
+                <input type="date" id="dob" max="2026-05-13">
+            </div>
+            <button id="calculate-btn">Calculate Age</button>
+        </section>
+
+        <section class="result-section hidden" id="result-section">
+            <div class="result-box">
+                <span class="value" id="res-years">0</span>
+                <span class="label">Years</span>
+            </div>
+            <div class="result-box">
+                <span class="value" id="res-months">0</span>
+                <span class="label">Months</span>
+            </div>
+            <div class="result-box">
+                <span class="value" id="res-days">0</span>
+                <span class="label">Days</span>
+            </div>
+        </section>
+        
+        <div class="day-result hidden" id="day-result">
+            You were born on a <span class="day-name" id="res-day-name"></span>
+        </div>
+        
+        <p class="error-msg hidden" id="error-msg">Please enter a valid date of birth.</p>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
