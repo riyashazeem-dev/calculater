@@ -1,4 +1,16 @@
 document.addEventListener('DOMContentLoaded', () => {
+    // --- Live Time Logic ---
+    const liveTimeEl = document.getElementById('live-time');
+    
+    function updateLiveTime() {
+        const now = new Date();
+        const timeString = now.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', second: '2-digit' });
+        liveTimeEl.textContent = timeString;
+    }
+    
+    updateLiveTime();
+    setInterval(updateLiveTime, 1000);
+
     // --- Tabs Logic ---
     const tabBtns = document.querySelectorAll('.tab-btn');
     const views = document.querySelectorAll('.calculator-view');
