@@ -1,14 +1,14 @@
 :root {
-    --bg-color: #0f172a;
-    --card-bg: rgba(30, 41, 59, 0.7);
-    --border-color: rgba(255, 255, 255, 0.1);
-    --text-primary: #f8fafc;
-    --text-secondary: #94a3b8;
-    --primary-color: #3b82f6;
-    --primary-hover: #2563eb;
-    --accent-1: #8b5cf6;
-    --accent-2: #ec4899;
-    --error: #ef4444;
+    --bg-color: #0a0a0a;
+    --card-bg: rgba(20, 20, 20, 0.85);
+    --border-color: rgba(149, 214, 0, 0.2);
+    --text-primary: #ffffff;
+    --text-secondary: #a3a3a3;
+    --primary-color: #95d600;
+    --primary-hover: #7eb800;
+    --accent-1: #66ff00;
+    --accent-2: #33cc33;
+    --error: #ff4444;
 }
 
 * {
@@ -148,7 +148,7 @@ input[type="date"],
 input[type="number"] {
     width: 100%;
     padding: 14px 16px;
-    background: rgba(15, 23, 42, 0.6);
+    background: rgba(10, 10, 10, 0.8);
     border: 1px solid var(--border-color);
     border-radius: 12px;
     color: var(--text-primary);
@@ -162,27 +162,27 @@ input[type="number"] {
 input[type="date"]:focus,
 input[type="number"]:focus {
     border-color: var(--primary-color);
-    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.3);
+    box-shadow: 0 0 0 3px rgba(149, 214, 0, 0.3);
 }
 
 button {
     width: 100%;
     padding: 14px;
     background: linear-gradient(135deg, var(--primary-color), var(--accent-1));
-    color: white;
+    color: #000000;
     border: none;
     border-radius: 12px;
     font-family: inherit;
     font-size: 1rem;
-    font-weight: 600;
+    font-weight: 700;
     cursor: pointer;
     transition: all 0.3s ease;
-    box-shadow: 0 10px 15px -3px rgba(59, 130, 246, 0.3);
+    box-shadow: 0 10px 15px -3px rgba(149, 214, 0, 0.3);
 }
 
 button:hover {
     transform: translateY(-2px);
-    box-shadow: 0 15px 20px -3px rgba(59, 130, 246, 0.4);
+    box-shadow: 0 15px 20px -3px rgba(149, 214, 0, 0.4);
     filter: brightness(1.1);
 }
 
@@ -207,7 +207,7 @@ button:active {
 }
 
 .result-box {
-    background: rgba(15, 23, 42, 0.5);
+    background: rgba(10, 10, 10, 0.6);
     border: 1px solid var(--border-color);
     border-radius: 16px;
     padding: 20px 10px;
@@ -295,13 +295,13 @@ button:active {
     color: var(--accent-2);
     letter-spacing: 0.1em;
     font-variant-numeric: tabular-nums;
-    text-shadow: 0 0 10px rgba(236, 72, 153, 0.4);
+    text-shadow: 0 0 10px rgba(149, 214, 0, 0.4);
 }
 
 /* Tabs styling */
 .tabs-container {
     display: flex;
-    background: rgba(15, 23, 42, 0.6);
+    background: rgba(10, 10, 10, 0.8);
     border-radius: 16px;
     padding: 6px;
     margin-bottom: 30px;
